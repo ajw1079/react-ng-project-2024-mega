@@ -1,0 +1,7 @@
+//scss 스타일을 통합하는 곳
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/box";
+@import "./base/mixins";
+@import "./components/common";
+@import "./components/main";

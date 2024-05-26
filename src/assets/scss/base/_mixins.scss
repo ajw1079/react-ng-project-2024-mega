@@ -1,0 +1,27 @@
+//_mixins.scss
+
+@mixin XS {
+  @media (min-width: $xs) {
+    @content;
+  }
+}
+@mixin SM {
+  @media (min-width: $sm) {
+    @content;
+  }
+}
+@mixin MD {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+@mixin LG {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+@mixin XL {
+  @media (min-width: $xl) {
+    @content;
+  }
+}

@@ -1,0 +1,46 @@
+//색상계열(유채색)
+$primary: #ffdd00;
+
+//색상계열(무채색 계열)
+$black: #000;
+$gray-1: #111;
+$gray-2: #222;
+$gray-3: #333;
+$gray-4: #444;
+$gray-5: #555;
+$gray-6: #666;
+$gray-7: #777;
+$gray-8: #888;
+$gray-9: #999;
+$gray-a: #aaa;
+$gray-b: #bbb;
+$gray-c: #ccc;
+$gray-d: #ddd;
+$gray-e: #eee;
+$white: #fff;
+
+//폰트 관련 항목
+$fs-13: 13px;
+$fs-14: 14px;
+$fs-15: 15px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-24: 24px;
+$fs-28: 28px;
+$fs-30: 30px;
+$fs-32: 32px;
+
+//pc -> mobile @media(max-width: )
+$xl: 1399px;
+$lg: 1199px;
+$md: 991px;
+$sm: 767px;
+$xs: 575px;
+
+//mobile -> PC @media(min-width: )
+// $xl: 1400px;
+// $lg: 1200px;
+// $md: 992px;
+// $sm: 768px;
+// $xs: 576px;

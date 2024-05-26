@@ -1,4 +1,4 @@
-const TextAtm = () => {
-  return <p className="text-root">{"문장 문장"}</p>;
+const TextAtm = ({ txtProp }) => {
+  return <p className="text-root">{txtProp}</p>;
 };
 export default TextAtm;
