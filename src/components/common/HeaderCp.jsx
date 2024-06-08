@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import menuData from "../../assets/data/menu.json";
 
@@ -9,17 +10,28 @@ const HeaderCp = () => {
   const menuLists = menuData.data;
   console.log(menuLists);
 
+  const [openResMenu, setOpenResMenu] = useState(false);
+  // 반응형 아이콘 클릭시 & 각 메뉴 클릭하여 페이지 전환시
+  const handleclick = (e) => {
+    setOpenResMenu(!openResMenu);
+  };
+  // 로고 클릭시
+  const logoClick = () => {
+    setOpenResMenu(false);
+  };
+
   return (
     <header className="h-60 d-flex justify-content-btween align-items-center position-relative">
-      <div className="logo">
+      <div className="logo" onClick={logoClick}>
         <Link to="/">
           <ImgAtm srcProp={logoImg} altProp="National Geographic Logo" />
         </Link>
       </div>
-      <div className="menu">
+      {/* 반응형일 경우 */}
+      <div className={openResMenu ? "menu active" : "menu"}>
         <ul className="d-flex">
           {menuLists.map((v, i) => (
-            <li key={i}>
+            <li key={i} onClick={handleclick}>
               <Link to={`/${v}`}>{v}</Link>
             </li>
           ))}
@@ -51,7 +63,10 @@ const HeaderCp = () => {
         </ul>
       </div>
 
-      <div className="resBtn position-absolute d-flex justify-content-center align-items-center">
+      <div
+        className="resBtn position-absolute d-flex justify-content-center align-items-center"
+        onClick={handleclick}
+      >
         <span></span>
         <span></span>
         <span></span>

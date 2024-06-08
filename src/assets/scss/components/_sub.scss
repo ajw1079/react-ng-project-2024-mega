@@ -1,0 +1,91 @@
+//components/_sub.scss
+.sub_item {
+  .wrap {
+    width: 1200px;
+    h2 {
+      color: $gray-5;
+      font-size: $fs-28;
+      text-align: center;
+    }
+    .content {
+      .box {
+        width: calc(25% - 20px);
+        margin: 0 10px 20px;
+        height: 280px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        .bg_img {
+          width: 100%;
+          height: 100%;
+          background-color: #ffb;
+          background-size: cover;
+          background-position: 50% 50%;
+        }
+        .info {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 20px 0;
+          transform: translateY(100%);
+          transition: transform 0.5s;
+
+          p {
+            text-align: center;
+            color: $white;
+            font-size: $fs-16;
+          }
+        }
+        &:hover {
+          .info {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: $xl) {
+}
+@media (max-width: $lg) {
+  .sub_item {
+    .wrap {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: $md) {
+  .sub_item {
+    .wrap {
+      .content {
+        .box {
+          width: calc(100% / 3 - 20px);
+        }
+      }
+    }
+  }
+}
+@media (max-width: $sm) {
+  .sub_item {
+    .wrap {
+      .content {
+        .box {
+          width: calc(50% - 20px);
+        }
+      }
+    }
+  }
+}
+@media (max-width: $xs) {
+  .sub_item {
+    .wrap {
+      .content {
+        .box {
+          width: calc(100% - 20px);
+        }
+      }
+    }
+  }
+}

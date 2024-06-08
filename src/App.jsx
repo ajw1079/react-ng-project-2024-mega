@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./assets/scss/app.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -13,11 +14,20 @@ import HeaderCp from "./components/common/HeaderCp";
 import FooterCp from "./components/common/FooterCp";
 
 function App() {
+  // const [openResMenu, setOpenResMenu] = useState(false);
+  // const handleclick = (e) => {
+  //   setOpenResMenu(!openResMenu);
+  // };
+
   return (
     <div className="App">
       <BrowserRouter>
         {/* <header></header> */}
-        <HeaderCp />
+        <HeaderCp
+        // openResMenu={openResMenu}
+        // handleclick={handleclick}
+        // setOpenResMenu={setOpenResMenu}
+        />
         <main>
           <Routes>
             <Route path="/" element={<MainPg />} />

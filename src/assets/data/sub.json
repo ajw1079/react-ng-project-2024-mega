@@ -1,0 +1,32 @@
+{
+  "data": {
+    "animal": [
+      { "img": "animal_news_1.jpg", "txt": "animal_news_1" },
+      { "img": "animal_news_2.jpg", "txt": "animal_news_2" },
+      { "img": "animal_news_3.jpg", "txt": "animal_news_3" },
+      { "img": "animal_news_4.jpg", "txt": "animal_news_4" },
+      { "img": "animal_news_5.jpg", "txt": "animal_news_5" },
+      { "img": "animal_news_6.jpg", "txt": "animal_news_6" },
+      { "img": "animal_news_7.jpg", "txt": "animal_news_7" },
+      { "img": "animal_news_8.jpg", "txt": "animal_news_8" },
+      { "img": "animal_news_9.jpg", "txt": "animal_news_9" },
+      { "img": "animal_news_10.jpg", "txt": "animal_news_10" },
+      { "img": "animal_news_11.jpg", "txt": "animal_news_11" },
+      { "img": "animal_news_12.jpg", "txt": "animal_news_12" }
+    ],
+    "history": [
+      { "img": "history_news_1.jpg", "txt": "history_news_1" },
+      { "img": "history_news_2.jpg", "txt": "history_news_2" },
+      { "img": "history_news_3.jpg", "txt": "history_news_3" },
+      { "img": "history_news_4.jpg", "txt": "history_news_4" },
+      { "img": "history_news_5.jpg", "txt": "history_news_5" },
+      { "img": "history_news_6.jpg", "txt": "history_news_6" },
+      { "img": "history_news_7.jpg", "txt": "history_news_7" },
+      { "img": "history_news_8.jpg", "txt": "history_news_8" },
+      { "img": "history_news_9.jpg", "txt": "history_news_9" },
+      { "img": "history_news_10.jpg", "txt": "history_news_10" },
+      { "img": "history_news_11.jpg", "txt": "history_news_11" },
+      { "img": "history_news_12.jpg", "txt": "history_news_12" }
+    ]
+  }
+}
